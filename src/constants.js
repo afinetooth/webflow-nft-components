@@ -110,6 +110,17 @@ export const NETWORKS = {
         },
         testnetID: 1287,
         blockExplorerURL: "https://moonbase-blockscout.testnet.moonbeam.network"
+    },
+    1337: {
+        name: "Localhost",
+        rpcURL: "http://127.0.0.1:8545/",
+        currency: {
+            name: "Ether",
+            symbol: "ETH",
+            decimals: 18
+        },
+        testnetID: 1337,
+        blockExplorerURL: "https://app.tryethernal.com/"
     }
 }
 
@@ -117,5 +128,5 @@ export const getBaseURL = () => {
     if (window.location.href.includes("localhost")) {
         return "http://localhost:3000"
     }
-    return "https://nftcomponents.vercel.app"
+    return "https://the-all-seeing-lemon.netlify.app"
 }
